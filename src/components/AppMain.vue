@@ -44,13 +44,26 @@ export default {
 
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 ul {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   li {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 60px;
   }
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
 </style>

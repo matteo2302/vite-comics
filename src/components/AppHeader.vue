@@ -92,13 +92,14 @@ nav {
   img {
     width: 100px;
     align-self: flex-start;
-    /* Aggiunto */
+    margin: 20px 0;
   }
 
   ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 100%;
 
     li {
       margin: 0 8px;
