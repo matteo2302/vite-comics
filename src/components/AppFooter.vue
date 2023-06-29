@@ -1,5 +1,6 @@
 <script>
-import appContacts from './appContacts.vue';
+import AppContacts from './appContacts.vue';
+import AppSocials from './AppSocials.vue';
 export default {
   data() {
     return {
@@ -7,7 +8,8 @@ export default {
     }
   },
   components: {
-    appContacts
+    AppContacts,
+    AppSocials
   }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
 <template>
   <div class="main-bg">
     <appContacts />
+    <AppSocials />
   </div>
 </template>
 
