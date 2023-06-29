@@ -119,10 +119,15 @@ nav {
   background-color: black;
   color: white;
 
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 h1 {
-  height: 100%;
-  vertical-align: middle;
+  width: 100%
 }
 </style>
