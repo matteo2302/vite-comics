@@ -86,7 +86,9 @@ export default {
 nav {
   display: flex;
   align-items: center;
-  padding: 20px 0;
+
+  justify-content: space-between;
+  height: 140px;
 
   img {
     width: 100px;
@@ -94,14 +96,15 @@ nav {
 
   ul {
     display: flex;
-    flex-basis: 100%;
-    justify-content: flex-end;
+    height: 140px;
+    align-items: center;
 
     li {
       margin: 0 8px;
-      align-items: center;
-      height: 100px;
-      display: flex;
+
+      height: 140px;
+
+      width: 50px;
     }
   }
 }
