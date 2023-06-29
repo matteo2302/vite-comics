@@ -94,7 +94,7 @@ nav {
 
   ul {
     display: flex;
-    flex-basis: 70%;
+    flex-basis: 100%;
     justify-content: flex-end;
 
     li {
