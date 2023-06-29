@@ -78,7 +78,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .active {
   border-bottom: 7px solid rgb(2, 130, 249);
 }
@@ -91,6 +91,8 @@ nav {
 
   img {
     width: 100px;
+    align-self: flex-start;
+    /* Aggiunto */
   }
 
   ul {
@@ -103,6 +105,10 @@ nav {
       width: 70px;
       text-align: center;
       height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
