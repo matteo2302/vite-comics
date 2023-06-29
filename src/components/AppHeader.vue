@@ -71,6 +71,11 @@ export default {
       </ul>
     </nav>
   </div>
+  <div class="title-content">
+    <div class="container">
+      <h1>content goes here</h1>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
@@ -99,5 +104,17 @@ nav {
       display: flex;
     }
   }
+}
+
+.title-content {
+  height: 150px;
+  background-color: black;
+  color: white;
+
+}
+
+h1 {
+  height: 100%;
+  vertical-align: middle;
 }
 </style>
