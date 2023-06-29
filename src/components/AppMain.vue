@@ -1,69 +1,41 @@
 <script>
+import AppShopList from './AppShopList.vue';
 export default {
   data() {
     return {
     }
-  }
+
+  },
+  components: {
+    AppShopList,
+  },
 }
 </script>
 
 <template>
-  <div class="shop-cont">
+  <div class="title-content">
     <div class="container">
-      <ul>
-        <li>
-          <img src="../assets/img/buy-comics-digital-comics.png" alt=" t-shirt">
-          <a href="#">dios</a>
-        </li>
-        <li>
-          <img src="../assets/img/buy-comics-merchandise.png" alt=" t-shirt">
-          <a href="#">dios</a>
-        </li>
-        <li>
-          <img src="../assets/img/buy-comics-subscriptions.png" alt=" t-shirt">
-          <a href="#">dios</a>
-        </li>
-        <li>
-          <img src="../assets/img/buy-comics-shop-locator.png" alt=" t-shirt">
-          <a href="#">dios</a>
-        </li>
-        <li>
-          <img src="../assets/img/buy-dc-power-visa.svg" alt=" t-shirt">
-          <a href="#">dios</a>
-        </li>
-
-      </ul>
+      <h1>content goes here</h1>
     </div>
   </div>
+  <AppShopList />
 </template>
 
 <style lang="scss" scoped>
-.shop-cont {
-  background-color: rgb(2, 130, 249);
-  height: 120px;
+.title-content {
+  height: 150px;
+  background-color: black;
+  color: white;
 
-}
 
-.container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-
-  li {
+  .container {
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 60px;
   }
 }
 
-img {
-  height: 100%;
-  width: 100%;
+h1 {
+  width: 100%
 }
 </style>

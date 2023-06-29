@@ -71,11 +71,6 @@ export default {
       </ul>
     </nav>
   </div>
-  <div class="title-content">
-    <div class="container">
-      <h1>content goes here</h1>
-    </div>
-  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -112,22 +107,5 @@ nav {
       justify-content: center;
     }
   }
-}
-
-.title-content {
-  height: 150px;
-  background-color: black;
-  color: white;
-
-
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-}
-
-h1 {
-  width: 100%
 }
 </style>
