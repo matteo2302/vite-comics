@@ -4,7 +4,7 @@ import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
 export default {
   data() {
-  result{
+    return {
 
     }
   },
@@ -16,6 +16,12 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
+</template>
 
-<style></style>
+<style lang="scss">
+@use './assets/scss/style.scss' as *;
+</style>
