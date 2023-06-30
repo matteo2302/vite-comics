@@ -22,6 +22,7 @@ export default {
   <div class="cards-container">
     <AppCards :comic="comic">
     </AppCards>
+    <button>Load More</button>
   </div>
 
   <AppShopList />
@@ -29,7 +30,17 @@ export default {
 
 <style lang="scss" scoped>
 .cards-container {
-  height: 600px;
+  height: 800px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(2, 130, 249);
+  color: white;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 </style>
