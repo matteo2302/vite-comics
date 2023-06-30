@@ -71,9 +71,12 @@ export default {
       </ul>
     </nav>
   </div>
+  <div class="main-bg"></div>
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/vars' as *;
+
 .active {
   border-bottom: 7px solid rgb(2, 130, 249);
 }
@@ -107,5 +110,9 @@ nav {
       justify-content: center;
     }
   }
+}
+
+.main-bg {
+  @include main-bg (url(../assets/img/jumbotron.jpg));
 }
 </style>

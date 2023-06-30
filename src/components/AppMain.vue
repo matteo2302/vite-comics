@@ -1,41 +1,35 @@
 <script>
 import AppShopList from './AppShopList.vue';
+import AppCards from './AppCards.vue';
+
 export default {
   data() {
     return {
     }
 
   },
+  props: {
+    comic: Array,
+  },
   components: {
     AppShopList,
+    AppCards,
   },
 }
 </script>
 
 <template>
-  <div class="title-content">
-    <div class="container">
-      <h1>content goes here</h1>
-    </div>
+  <div class="cards-container">
+    <AppCards :comic="comic">
+    </AppCards>
   </div>
+
   <AppShopList />
 </template>
 
 <style lang="scss" scoped>
-.title-content {
-  height: 150px;
+.cards-container {
+  height: 600px;
   background-color: black;
-  color: white;
-
-
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-}
-
-h1 {
-  width: 100%
 }
 </style>

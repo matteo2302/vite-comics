@@ -22,12 +22,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.main-bg {
-  width: 100%;
-  background-image: url('../assets/img/footer-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+@use '../assets/scss/vars' as *;
 
-  height: 400px;
+.main-bg {
+  @include main-bg (url(../assets/img/footer-bg.jpg));
 }
 </style>
